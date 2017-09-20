@@ -1,6 +1,3 @@
-源码地址：https://github.com/wangfupeng1988/react-simple-o2o-demo/tree/stage1-home-page
-
-
 
 # 首页开发
 
