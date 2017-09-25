@@ -1,9 +1,11 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
-import { bindActionCreators } from 'redux'
-import { connect } from 'react-redux'
 import LocalStore from '../util/localStore'
 import { CITYNAME } from '../config/localStoreKey'
+
+//引入Redux相关组件
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 import * as userInfoActionsFromOtherFile from '../actions/userinfo' 
 
 class App extends React.Component {
@@ -56,6 +58,8 @@ function mapDispatchToProps(dispatch) {
         userInfoActions: bindActionCreators(userInfoActionsFromOtherFile, dispatch),
     }
 }
+
+//根据Redux规则修改
 export default connect(
     mapStateToProps,
     mapDispatchToProps
