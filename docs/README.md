@@ -1,5 +1,5 @@
 
-# 首页开发
+# 首页
 
 This is the homepage.
 
@@ -8,7 +8,7 @@ This is the homepage.
 
 ## 各个开发阶段
 
-现在，我们面临着的就是一个空空的代码框架。
+现在，我们面临着的是一个空空的代码框架。
 
 接下来，先在页面中打印出 hello world
 
