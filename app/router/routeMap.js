@@ -9,7 +9,11 @@ import Search from '../containers/Search'
 import Detail from '../containers/Detail'
 import NotFound from '../containers/404'
 
-
+/*
+路由对应着containers里面的每个页面
+最外层是containers/index.jsx
+IndexRoute是根目录，其父组件是APP（containers/index.jsx）
+*/
 class RouterMap extends React.Component {
     render() {
         return (
