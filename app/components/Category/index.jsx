@@ -6,8 +6,8 @@ import './style.less'
 
 class Category extends React.Component {
     /*
-    轮播图需要用到一个第三方插件 https://github.com/voronianski/react-swipe 根据其文档要求需要安装插件，
-    即`npm install react swipe-js-iso react-swipe --save`，这个插件的日常使用我已经验证过，大家可放心使用
+    轮播图需要用到一个第三方插件 https://github.com/voronianski/react-swipe 
+    根据其文档要求需要安装插件，即`npm install react swipe-js-iso react-swipe --save`
     */
     constructor(props, context) {
         super(props, context);
@@ -22,7 +22,7 @@ class Category extends React.Component {
             callback: function (index) {
                 // 更新当前轮播图的index
                 this.setState({index: index});
-            }.bind(this)
+            }.bind(this) //需要绑定this，或者是是用箭头函数
         }
 
         return (
