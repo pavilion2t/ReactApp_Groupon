@@ -26,11 +26,13 @@ class App extends React.Component {
         )
     }
     componentDidMount() {
-        // 获取位置信息
+        // 从LocalStore里面获取城市
+       // 程序中等于判断都用三等，除了cityName == null 等价于 cityName == null || cityName == undefined
         let cityName = LocalStore.getItem(CITYNAME)
         if (cityName == null) {
             cityName = '北京'
         }
+        //将城市信息存储到 Redux
         this.props.userInfoActions.update({
             cityName: cityName
         })
